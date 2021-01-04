@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+:root {
+  --light: #FFF6F5;
+  --mid: #d89ea3;
+  --dark: #743A34;
+  --alt: #DBBBE0;
+  --yellow: #F4D57A;
+  --green: #9FDAD6;
+  --red: #E77C8C;
+}
+
+section {
+  top: 5%;
+  margin-top: 5vh;
+  height: 100vh;
+}
+
+section[data-screen="null"] {
+  height: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-bar {
+  z-index: 10;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  left: 2.5%;
+  width: 95%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--light);
+}
+
+.top-bar i {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.top-bar h2 {
+  font-family: 'Varela Round', sans-serif;
+  color: var(--mid);
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 80%;
+  padding: 5%;
+  margin-bottom: 2.5%;
+  border-radius: 10px;
+  background-color: white;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.card h1 {
+  color: var(--dark);
+}
+
+.card p {
+  color: var(--mid);
+}
+
+button.icon-button {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+button.icon-button i {
+  color: var(--mid);
+  font-size: 3vmax;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+
+button.icon-button:hover > i {
+  color: var(--dark);
+}
+
+button.text-button {
+  outline: none;
+  border: none;
+  background: var(--alt);
+  color: white;
+  padding: 2.5% 5%;
+  border-radius: 30px;
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.profile {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .avatar {
+  width: 20vw;
+  height: 20vw;
+  margin-bottom: -5.5vh;
+  border-radius: 50px;
+  border: white 5px solid;
+  z-index: 2;
+}
+
+.profile .information {
+  width: 80%;
+  padding: 10% 5%;
+  margin-bottom: 2.5%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.profile .information .data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.profile .information .data h2, .profile .information .data sub {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2vmax;
+}
+
+.profile .information .data h2 {
+  color: var(--mid);
+}
+
+.colour.foreground.light {
+  color: var(--light);
+}
+
+.colour.foreground.mid {
+  color: var(--mid);
+}
+
+.colour.foreground.dark {
+  color: var(--dark);
+}
+
+.colour.foreground.alt {
+  color: var(--alt);
+}
+
+.colour.foreground.yellow {
+  color: var(--yellow);
+}
+
+.colour.foreground.green {
+  color: var(--green);
+}
+
+.colour.foreground.red {
+  color: var(--red);
+}
+
+.colour.background.light {
+  background-color: var(--light);
+}
+
+.colour.background.mid {
+  background-color: var(--mid);
+}
+
+.colour.background.dark {
+  background-color: var(--dark);
+}
+
+.colour.background.alt {
+  background-color: var(--alt);
+}
+
+.colour.background.yellow {
+  background-color: var(--yellow);
+}
+
+.colour.background.green {
+  background-color: var(--green);
+}
+
+.colour.background.red {
+  background-color: var(--red);
+}
+
+@-webkit-keyframes Section-Out-Right {
+  0% {
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  99% {
+    visibility: visible;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  100% {
+    visibility: hidden;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes Section-Out-Right {
+  0% {
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  99% {
+    visibility: visible;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  100% {
+    visibility: hidden;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes Section-In-Left {
+  0% {
+    visibility: hidden;
+    -webkit-transform: none;
+            transform: none;
+  }
+  1% {
+    visibility: visible;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes Section-In-Left {
+  0% {
+    visibility: hidden;
+    -webkit-transform: none;
+            transform: none;
+  }
+  1% {
+    visibility: visible;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+/*# sourceMappingURL=main.css.map */

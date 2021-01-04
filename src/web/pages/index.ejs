@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OpenGraph Tags -->
+    <meta charset="UTF-8">
+    <meta name="language" content="English">
+    <meta name="author" content="tascord">
+    <meta name="theme-color" content="#ff006a">
+    <meta name="keywords" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="/p/image.png">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="1000">
+    <meta property="og:description" content="">
+
+    <!-- Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/p/scripts/request.js"></script>
+    <script src="/p/scripts/helpers.js"></script>
+    <script src="/p/scripts/bootstrap.js"></script>
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="/p/style/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Page Title -->
+    <title>Home</title>
+
+</head>
+
+<body>
+
+    <div class="top-bar">
+
+        <button class="icon-button" onclick="Open_Section('Menu')">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <h2 onclick="Open_Section('home')">foomde</h2>
+
+        <button class="icon-button" onclick="Open_Section('Food_Bank')">
+            <i class="material-icons">restaurant_menu</i>
+        </button>
+
+    </div>
+
+    <section data-screen="null" data-active-screen=""></section>
+
+    <section data-screen="home">
+
+
+        <div class="cards">
+
+        </div>
+
+    </section>
+
+    <section data-screen="identity">
+
+        <div class="profile">
+
+            <img src="https://cdn.discordapp.com/avatars/205811939861856257/a2df55dad96da8b961181828388b51e7.webp?size=1024" class="avatar">
+
+            <div class="information">
+
+                <div class="data">
+                    
+                    <h2>Name</h2>
+                    <sub data-field-name="Name"></sub>
+
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="data">
+                    
+                    <h2>Height</h2>
+                    <sub data-field-name="Height"></sub>
+
+                </div>
+
+                <div class="data">
+                    
+                    <h2>Weight</h2>
+                    <sub data-field-name="Weight"></sub>
+
+                </div>
+
+                <div class="spacer"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>Begin();</script>
+</body>
+
+</html>
